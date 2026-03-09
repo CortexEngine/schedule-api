@@ -1,11 +1,11 @@
-package com.example.collab.config;
+package com.example.schedule_api.config;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
-import com.example.collab.exception.resource.ConfigurationException;
+import com.example.schedule_api.exception.resource.ConfigurationException;
 
 import javax.sql.DataSource;
 
