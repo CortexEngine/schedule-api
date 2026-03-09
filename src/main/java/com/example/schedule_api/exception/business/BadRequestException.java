@@ -1,8 +1,8 @@
-package com.example.collab.exception.business;
+package com.example.schedule_api.exception.business;
 
-import com.example.collab.exception.CollabApiException;
+import com.example.schedule_api.exception.ScheduleApiException;
 
-public class BadRequestException extends CollabApiException {
+public class BadRequestException extends ScheduleApiException {
 
     public BadRequestException(String message) {
 

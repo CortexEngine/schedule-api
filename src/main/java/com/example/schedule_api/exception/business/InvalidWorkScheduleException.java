@@ -1,4 +1,4 @@
-package com.example.collab.exception.business;
+package com.example.schedule_api.exception.business;
 
 public class InvalidWorkScheduleException extends UnprocessableEntityException {
 
