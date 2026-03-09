@@ -1,13 +1,12 @@
-package com.example.collab.controller;
+package com.example.schedule_api.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.collab.dto.request.ScheduleRotationRequestDTO;
-import com.example.collab.dto.response.ScheduleRotationResponseDTO;
-import com.example.collab.service.ScheduleRotationService;
+import com.example.schedule_api.dto.request.ScheduleRotationRequestDTO;
+import com.example.schedule_api.dto.response.ScheduleRotationResponseDTO;
+import com.example.schedule_api.service.ScheduleRotationService;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
@@ -19,7 +18,6 @@ public class ScheduleRotationController {
 
     private ScheduleRotationService scheduleRotationService;
 
-    @Autowired
     public ScheduleRotationController(ScheduleRotationService scheduleRotationService) {
 
         this.scheduleRotationService = scheduleRotationService;

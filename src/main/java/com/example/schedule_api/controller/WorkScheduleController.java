@@ -1,15 +1,14 @@
-package com.example.collab.controller;
+package com.example.schedule_api.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.collab.dto.request.WorkScheduleRequestDTO;
-import com.example.collab.dto.response.WorkScheduleResponseDTO;
-import com.example.collab.service.WorkScheduleService;
+import com.example.schedule_api.dto.request.WorkScheduleRequestDTO;
+import com.example.schedule_api.dto.response.WorkScheduleResponseDTO;
+import com.example.schedule_api.service.WorkScheduleService;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
@@ -21,7 +20,6 @@ public class WorkScheduleController {
 
     private WorkScheduleService workScheduleService;
 
-    @Autowired
     public WorkScheduleController(WorkScheduleService workScheduleService) {
 
         this.workScheduleService = workScheduleService;
