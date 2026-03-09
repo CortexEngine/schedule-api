@@ -1,8 +1,8 @@
-package com.example.collab.exception.domain;
+package com.example.schedule_api.exception.domain;
 
-import com.example.collab.exception.CollabApiException;
+import com.example.schedule_api.exception.ScheduleApiException;
 
-public class ConflictException extends CollabApiException {
+public class ConflictException extends ScheduleApiException {
 
     public ConflictException(String message) {
 

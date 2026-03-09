@@ -1,4 +1,4 @@
-package com.example.collab.exception.domain;
+package com.example.schedule_api.exception.domain;
 
 public class DuplicatedWorkScheduleException extends ConflictException {
 
