@@ -1,12 +1,12 @@
-package com.example.collab.mapper;
+package com.example.schedule_api.mapper;
 
 import org.mapstruct.*;
 
-import com.example.collab.domain.model.ScheduleRotation;
-import com.example.collab.domain.model.WorkSchedule;
-import com.example.collab.domain.model.WorkTime;
-import com.example.collab.dto.request.ScheduleRotationRequestDTO;
-import com.example.collab.dto.response.ScheduleRotationResponseDTO;
+import com.example.schedule_api.domain.model.ScheduleRotation;
+import com.example.schedule_api.domain.model.WorkSchedule;
+import com.example.schedule_api.domain.model.WorkTime;
+import com.example.schedule_api.dto.request.ScheduleRotationRequestDTO;
+import com.example.schedule_api.dto.response.ScheduleRotationResponseDTO;
 
 @Mapper(componentModel = "spring", nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
 public interface ScheduleRotationMapper {

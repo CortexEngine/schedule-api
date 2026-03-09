@@ -1,10 +1,10 @@
-package com.example.collab.mapper;
+package com.example.schedule_api.mapper;
 
 import org.mapstruct.*;
 
-import com.example.collab.domain.model.WorkSchedule;
-import com.example.collab.dto.request.WorkScheduleRequestDTO;
-import com.example.collab.dto.response.WorkScheduleResponseDTO;
+import com.example.schedule_api.domain.model.WorkSchedule;
+import com.example.schedule_api.dto.request.WorkScheduleRequestDTO;
+import com.example.schedule_api.dto.response.WorkScheduleResponseDTO;
 
 @Mapper(componentModel = "spring", nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
 public interface WorkScheduleMapper {
