@@ -1,4 +1,4 @@
-package com.example.collab.repository;
+package com.example.schedule_api.repository;
 
 import java.util.Optional;
 
@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.example.collab.domain.model.ScheduleRotation;
+import com.example.schedule_api.domain.model.ScheduleRotation;
 
 public interface ScheduleRotationRepository extends JpaRepository<ScheduleRotation, Long> {
 

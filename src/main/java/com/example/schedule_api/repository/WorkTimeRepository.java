@@ -1,4 +1,4 @@
-package com.example.collab.repository;
+package com.example.schedule_api.repository;
 
 import java.time.LocalTime;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.collab.domain.model.WorkTime;
+import com.example.schedule_api.domain.model.WorkTime;
 
 public interface WorkTimeRepository extends JpaRepository<WorkTime, Long> {
 

@@ -1,11 +1,11 @@
-package com.example.collab.repository;
+package com.example.schedule_api.repository;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.collab.domain.model.WorkSchedule;
+import com.example.schedule_api.domain.model.WorkSchedule;
 
 public interface WorkScheduleRepository extends JpaRepository<WorkSchedule, Long> {
 
