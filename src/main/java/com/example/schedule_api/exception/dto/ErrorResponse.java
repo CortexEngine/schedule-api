@@ -1,4 +1,4 @@
-package com.example.collab.exception.dto;
+package com.example.schedule_api.exception.dto;
 
 import java.time.LocalDateTime;
 import java.util.Map;
