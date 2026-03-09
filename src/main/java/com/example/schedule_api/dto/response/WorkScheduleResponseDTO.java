@@ -1,4 +1,4 @@
-package com.example.collab.dto.response;
+package com.example.schedule_api.dto.response;
 
 public record WorkScheduleResponseDTO (
 

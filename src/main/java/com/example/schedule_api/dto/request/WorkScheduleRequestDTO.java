@@ -1,4 +1,4 @@
-package com.example.collab.dto.request;
+package com.example.schedule_api.dto.request;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

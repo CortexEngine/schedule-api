@@ -1,4 +1,4 @@
-package com.example.collab.dto.request;
+package com.example.schedule_api.dto.request;
 
 import java.util.List;
 
