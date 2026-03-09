@@ -1,17 +1,16 @@
-package com.example.collab.service;
+package com.example.schedule_api.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.collab.domain.model.WorkSchedule;
-import com.example.collab.dto.request.WorkScheduleRequestDTO;
-import com.example.collab.dto.response.WorkScheduleResponseDTO;
-import com.example.collab.mapper.WorkScheduleMapper;
-import com.example.collab.repository.WorkScheduleRepository;
-import com.example.collab.service.validation.WorkScheduleValidator;
+import com.example.schedule_api.domain.model.WorkSchedule;
+import com.example.schedule_api.dto.request.WorkScheduleRequestDTO;
+import com.example.schedule_api.dto.response.WorkScheduleResponseDTO;
+import com.example.schedule_api.mapper.WorkScheduleMapper;
+import com.example.schedule_api.repository.WorkScheduleRepository;
+import com.example.schedule_api.service.validation.WorkScheduleValidator;
 
 @Service
 public class WorkScheduleService {
@@ -22,7 +21,6 @@ public class WorkScheduleService {
 
   private final WorkScheduleMapper workScheduleMapper;
   
-  @Autowired
   public WorkScheduleService(WorkScheduleRepository workScheduleRepository, WorkScheduleValidator workScheduleValidator, WorkScheduleMapper workScheduleMapper) {
 
     this.workScheduleRepository = workScheduleRepository;
