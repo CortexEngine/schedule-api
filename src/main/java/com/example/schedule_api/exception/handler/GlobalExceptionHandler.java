@@ -1,10 +1,10 @@
-package com.example.collab.exception.handler;
+package com.example.schedule_api.exception.handler;
 
-import com.example.collab.exception.business.*;
-import com.example.collab.exception.domain.*;
-import com.example.collab.exception.resource.*;
+import com.example.schedule_api.exception.business.*;
+import com.example.schedule_api.exception.domain.*;
+import com.example.schedule_api.exception.resource.*;
 
-import com.example.collab.exception.dto.ErrorResponse;
+import com.example.schedule_api.exception.dto.ErrorResponse;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -47,17 +47,6 @@ public class GlobalExceptionHandler {
         var body = ErrorResponse.of(HttpStatus.CONFLICT.value(), "Conflict", ex.getMessage(), path(req));
 
         return new ResponseEntity<>(body, HttpStatus.CONFLICT);
-
-    }
-
-    // HTTP 422
-    @ExceptionHandler({ UnprocessableEntityException.class, InvalidDocumentException.class })
-    public ResponseEntity<ErrorResponse> handleUnprocessable(RuntimeException ex, WebRequest req) {
-
-        var body = ErrorResponse.of(HttpStatus.UNPROCESSABLE_ENTITY.value(), "Unprocessable Entity", ex.getMessage(),
-                path(req));
-
-        return new ResponseEntity<>(body, HttpStatus.UNPROCESSABLE_ENTITY);
 
     }
 
