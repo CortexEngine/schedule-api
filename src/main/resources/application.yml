@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: collab
+
+  # Declina o uso do docker
+  docker:
+    compose:
+      enabled: false
+
+  # Atualiza os schemas do banco de dados --DEV
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      org.hibernate.envers.audit_table_suffix: _history
+      org.hibernate.envers.revision_field_name: rev
+      org.hibernate.envers.revision_type_field_name: revtype
+      org.hibernate.envers.store_data_at_delete: true
