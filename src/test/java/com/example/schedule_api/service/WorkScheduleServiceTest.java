@@ -1,4 +1,4 @@
-package com.example.collab.service;
+package com.example.schedule_api.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -14,12 +14,12 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.example.collab.domain.model.WorkSchedule;
-import com.example.collab.dto.request.WorkScheduleRequestDTO;
-import com.example.collab.dto.response.WorkScheduleResponseDTO;
-import com.example.collab.mapper.WorkScheduleMapper;
-import com.example.collab.repository.WorkScheduleRepository;
-import com.example.collab.service.validation.WorkScheduleValidator;
+import com.example.schedule_api.domain.model.WorkSchedule;
+import com.example.schedule_api.dto.request.WorkScheduleRequestDTO;
+import com.example.schedule_api.dto.response.WorkScheduleResponseDTO;
+import com.example.schedule_api.mapper.WorkScheduleMapper;
+import com.example.schedule_api.repository.WorkScheduleRepository;
+import com.example.schedule_api.service.validation.WorkScheduleValidator;
 
 @ExtendWith(MockitoExtension.class)
 @DisplayName("WorkScheduleService Tests")

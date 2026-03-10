@@ -1,4 +1,4 @@
-package com.example.collab.controller;
+package com.example.schedule_api.controller;
 
 import static org.hamcrest.Matchers.*;
 import static org.mockito.ArgumentMatchers.*;
@@ -17,10 +17,10 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.example.collab.dto.request.ScheduleRotationRequestDTO;
-import com.example.collab.dto.response.ScheduleRotationResponseDTO;
-import com.example.collab.exception.resource.ScheduleRotationNotFoundException;
-import com.example.collab.service.ScheduleRotationService;
+import com.example.schedule_api.dto.request.ScheduleRotationRequestDTO;
+import com.example.schedule_api.dto.response.ScheduleRotationResponseDTO;
+import com.example.schedule_api.exception.resource.ScheduleRotationNotFoundException;
+import com.example.schedule_api.service.ScheduleRotationService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @WebMvcTest(ScheduleRotationController.class)

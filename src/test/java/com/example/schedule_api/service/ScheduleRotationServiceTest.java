@@ -1,4 +1,4 @@
-package com.example.collab.service;
+package com.example.schedule_api.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -13,12 +13,12 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.example.collab.domain.model.ScheduleRotation;
-import com.example.collab.dto.request.ScheduleRotationRequestDTO;
-import com.example.collab.dto.response.ScheduleRotationResponseDTO;
-import com.example.collab.mapper.ScheduleRotationMapper;
-import com.example.collab.repository.ScheduleRotationRepository;
-import com.example.collab.service.validation.ScheduleRotationValidator;
+import com.example.schedule_api.domain.model.ScheduleRotation;
+import com.example.schedule_api.dto.request.ScheduleRotationRequestDTO;
+import com.example.schedule_api.dto.response.ScheduleRotationResponseDTO;
+import com.example.schedule_api.mapper.ScheduleRotationMapper;
+import com.example.schedule_api.repository.ScheduleRotationRepository;
+import com.example.schedule_api.service.validation.ScheduleRotationValidator;
 
 @ExtendWith(MockitoExtension.class)
 @DisplayName("ScheduleRotationService Tests")

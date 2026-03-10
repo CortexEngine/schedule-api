@@ -1,4 +1,4 @@
-package com.example.collab.domain.model;
+package com.example.schedule_api.domain.model;
 
 import static org.junit.jupiter.api.Assertions.*;
 

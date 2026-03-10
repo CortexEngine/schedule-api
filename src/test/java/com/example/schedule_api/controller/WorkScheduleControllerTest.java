@@ -1,4 +1,4 @@
-package com.example.collab.controller;
+package com.example.schedule_api.controller;
 
 import static org.hamcrest.Matchers.*;
 import static org.mockito.ArgumentMatchers.*;
@@ -17,10 +17,10 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.example.collab.dto.request.WorkScheduleRequestDTO;
-import com.example.collab.dto.response.WorkScheduleResponseDTO;
-import com.example.collab.exception.resource.WorkScheduleNotFoundException;
-import com.example.collab.service.WorkScheduleService;
+import com.example.schedule_api.dto.request.WorkScheduleRequestDTO;
+import com.example.schedule_api.dto.response.WorkScheduleResponseDTO;
+import com.example.schedule_api.exception.resource.WorkScheduleNotFoundException;
+import com.example.schedule_api.service.WorkScheduleService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @WebMvcTest(WorkScheduleController.class)

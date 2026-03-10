@@ -1,4 +1,4 @@
-package com.example.collab.mapper;
+package com.example.schedule_api.mapper;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,9 +8,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
 
-import com.example.collab.domain.model.WorkTime;
-import com.example.collab.dto.request.WorkTimeRequestDTO;
-import com.example.collab.dto.response.WorkTimeResponseDTO;
+import com.example.schedule_api.domain.model.WorkTime;
+import com.example.schedule_api.dto.request.WorkTimeRequestDTO;
+import com.example.schedule_api.dto.response.WorkTimeResponseDTO;
 
 @DisplayName("WorkTimeMapper Tests")
 class WorkTimeMapperTest {
